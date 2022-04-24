@@ -1,5 +1,10 @@
 @import "reset";
+@import "swiper-bundle.min";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	font-family: 'Open Sans', Arial, sans-serif;
@@ -16,6 +21,10 @@ h2 {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
+}
+
+.text-black {
+	color: #000000;
 }
 
 .container {
@@ -56,14 +65,21 @@ h2 {
 
 .slider {
 	&__item {
+		position: relative;
 		padding-top: 60px;
 		box-sizing: border-box;
 		height: 440px;
-		background-image: url('../img/slide1.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
 		color: #FFFFFF;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -2;
+		}
 	}
 	&__title {
 		font-size: 48px;
@@ -336,4 +352,27 @@ h2 {
 			}
 		}
 	}
+}
+
+.swiper {
+  width: 100%;
+  height: 440px;
+
+  .swiper-pagination-bullets {
+  	bottom: 23px;
+  }
+
+  .swiper-pagination-bullet {
+  	width: 12px;
+  	height: 12px;
+  	margin: 0 8px !important;
+  	background-color: #FFFFFF;
+  	opacity: .5;
+  }
+
+  .swiper-pagination-bullet-active {
+  	background-color: #2A9FF3;
+  	opacity: 1;
+  }
+
 }

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Автопрайм Балашиха — Opel по низким ценам</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,24 +26,80 @@
 	</header>
 
 	<section class="slider">
-		<div class="slider__item">
-			<div class="container">
-				<div class="slider__title">Новая opel astra</div>
-				<div class="slider__subtitle">надежность в любой ситуации.</div>
-				<button class="slider__btn">узнать подробности</button>
-			</div>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				
+				<div class="swiper-slide">
+					<div class="slider__item">
+						<div class="container">
+							<div class="slider__title">Новая opel astra</div>
+							<div class="slider__subtitle">надежность в любой ситуации.</div>
+							<button class="slider__btn">узнать подробности</button>
+						</div>
+						<img src="img/slide1.jpg" alt="opel picture">
+					</div>    				
+				</div>
+
+				<div class="swiper-slide">
+					<div class="slider__item">
+						<div class="container">
+							<div class="slider__title">На полном ходу</div>
+							<div class="slider__subtitle">покаряет любые преграды.</div>
+							<button class="slider__btn">узнать подробности</button>
+						</div>
+						<img src="img/slide2.jpg" alt="opel picture">
+					</div>    				
+				</div>    			
+
+				<div class="swiper-slide">
+					<div class="slider__item">
+						<div class="container">
+							<div class="slider__title text-black">Покорение новых вершин</div>
+							<div class="slider__subtitle text-black">комфортная езда и управление.</div>
+							<button class="slider__btn">узнать подробности</button>
+						</div>
+						<img src="img/slide3.jpg" alt="opel picture">
+					</div>    				
+				</div>
+
+				<div class="swiper-slide">
+					<div class="slider__item">
+						<div class="container">
+							<div class="slider__title">Путешествия без помех</div>
+							<div class="slider__subtitle">перспективы далеких поездок.</div>
+							<button class="slider__btn">узнать подробности</button>
+						</div>
+						<img src="img/slide4.jpg" alt="opel picture">
+					</div>    				
+				</div>
+
+				<div class="swiper-slide">
+					<div class="slider__item">
+						<div class="container">
+							<div class="slider__title">В тандеме с природой</div>
+							<div class="slider__subtitle">изящность и функциональность.</div>
+							<button class="slider__btn">узнать подробности</button>
+						</div>
+						<img src="img/slide5.jpg" alt="opel picture">
+					</div>    				
+				</div>
+				
+			</div>  			
+			
+			<div class="swiper-pagination"></div>
+
 		</div>
 	</section>
 
 	<section class="nav">
 		<div class="container">
 			<div class="nav__list">
-				<div class="nav__item active"><a href="#">crossland</a></div>
-				<div class="nav__item"><a href="#">zafira</a></div>
-				<div class="nav__item"><a href="#">astra</a></div>
-				<div class="nav__item"><a href="#">combo life</a></div>
-				<div class="nav__item"><a href="#">combo cargo</a></div>
-				<div class="nav__item"><a href="#">vivaro</a></div>
+				<div class="nav__item"><a href="#crossland">crossland</a></div>
+				<div class="nav__item"><a href="#zafira">zafira</a></div>
+				<div class="nav__item"><a href="#astra">astra</a></div>
+				<div class="nav__item"><a href="#456">combo life</a></div>
+				<div class="nav__item"><a href="#456">combo cargo</a></div>
+				<div class="nav__item"><a href="#456">vivaro</a></div>
 			</div>
 		</div>
 	</section>
@@ -52,8 +108,9 @@
 		<div class="container">
 			<div class="about__text">
 				<p>Среди специальных предложений вы найдете специальные модели Opel с низкой ежемесячной арендной платой, на которые вы можете бесплатно получить <strong>пятилетнюю гарантию</strong> и регулярное обслуживание в течение пяти лет. Так вы сможете наслаждаться поездкой без забот.<br><br>
-                <strong>Езжай куда хочешь.</strong> Opel всегда доставит тебя в целости и сохранности.
+					<strong>Езжай куда хочешь.</strong> Opel всегда доставит тебя в целости и сохранности.
 				</p>
+				<span id="crossland"></span>
 			</div>
 		</div>
 	</section>
@@ -88,6 +145,7 @@
 						<button class="models__order">оставить заявку</button>
 						<button class="models__call">заказать звонок</button>
 					</div>
+					<span id="zafira"></span>
 				</div>
 			</div>
 
@@ -116,6 +174,7 @@
 						<button class="models__order">оставить заявку</button>
 						<button class="models__call">заказать звонок</button>
 					</div>
+					<span id="astra"></span>
 				</div>
 				<div class="models__image">
 					<img src="img/zafira.jpg" alt="cossland">
@@ -197,7 +256,7 @@
 				<div class="motivation__left">
 					<div class="motivation__subtitile">Будущее зависит от тебя.</div>
 					<p class="motivation__text">новые opel на специальных условиях
-в автопрайм Балашиха!</p>
+					в автопрайм Балашиха!</p>
 				</div>
 				<div class="motivation__right">
 					<form action="" class="motivation__form">
@@ -221,13 +280,17 @@
 				<p>Все права защищены</p>
 			</div>
 			<div class="footer__disclamer">
-				<p>Любая информация, содержащаяся на настоящем сайте официального дилера Exeed, носит исключительно справочный характер и ни при каких обстоятельствах не может быть расценена как предложение заключить договор (не является публичной офертой (ст. 437 ГК РФ)). Технические характеристики и оборудование автомобилей, условия приобретения авто, цены, спецпредложения и комплектации автомобилей, указанные на сайте, приведены для примера и могут быть изменены в любое время без предварительного уведомления. Подробности уточняйте в отделах продаж ООО «АВТОРУСЬ СН» - ЭКСИД Центр Авторусь Лосиный остров и ЭКСИД Центр Авторусь Силикатная.</p>
+				<p>Любая информация, содержащаяся на настоящем сайте официального дилера Автопрайм, носит исключительно справочный характер и ни при каких обстоятельствах не может быть расценена как предложение заключить договор (не является публичной офертой (ст. 437 ГК РФ)). Технические характеристики и оборудование автомобилей, условия приобретения авто, цены, спецпредложения и комплектации автомобилей, указанные на сайте, приведены для примера и могут быть изменены в любое время без предварительного уведомления. Подробности уточняйте в отделах продаж АО «Автопрайм» Балашиха.</p>
 			</div>
 			<div class="footer__bottom">
 				<p>Разработано <a href="mailto:byketch@yandex.ru">Андреем Самойленко</a></p>
 			</div>
 		</div>
 	</footer>
+
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/app.js"></script>
+	
 	
 </body>
 </html>
