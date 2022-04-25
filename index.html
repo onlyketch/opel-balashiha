@@ -34,7 +34,7 @@
 						<div class="container">
 							<div class="slider__title">Новая opel astra</div>
 							<div class="slider__subtitle">надежность в любой ситуации.</div>
-							<button class="slider__btn">узнать подробности</button>
+							<button class="slider__btn" data-fancybox data-src="#modal">узнать подробности</button>
 						</div>
 						<img src="img/slide1.jpg" alt="opel picture">
 					</div>    				
@@ -45,7 +45,7 @@
 						<div class="container">
 							<div class="slider__title">На полном ходу</div>
 							<div class="slider__subtitle">покаряет любые преграды.</div>
-							<button class="slider__btn">узнать подробности</button>
+							<button class="slider__btn" data-fancybox data-src="#modal">узнать подробности</button>
 						</div>
 						<img src="img/slide2.jpg" alt="opel picture">
 					</div>    				
@@ -56,7 +56,7 @@
 						<div class="container">
 							<div class="slider__title text-black">Покорение новых вершин</div>
 							<div class="slider__subtitle text-black">комфортная езда и управление.</div>
-							<button class="slider__btn">узнать подробности</button>
+							<button class="slider__btn" data-fancybox data-src="#modal">узнать подробности</button>
 						</div>
 						<img src="img/slide3.jpg" alt="opel picture">
 					</div>    				
@@ -67,7 +67,7 @@
 						<div class="container">
 							<div class="slider__title">Путешествия без помех</div>
 							<div class="slider__subtitle">перспективы далеких поездок.</div>
-							<button class="slider__btn">узнать подробности</button>
+							<button class="slider__btn" data-fancybox data-src="#modal">узнать подробности</button>
 						</div>
 						<img src="img/slide4.jpg" alt="opel picture">
 					</div>    				
@@ -78,7 +78,7 @@
 						<div class="container">
 							<div class="slider__title">В тандеме с природой</div>
 							<div class="slider__subtitle">изящность и функциональность.</div>
-							<button class="slider__btn">узнать подробности</button>
+							<button class="slider__btn" data-fancybox data-src="#modal">узнать подробности</button>
 						</div>
 						<img src="img/slide5.jpg" alt="opel picture">
 					</div>    				
@@ -142,8 +142,8 @@
 						</div>
 					</div>
 					<div class="models__buttons">
-						<button class="models__order">оставить заявку</button>
-						<button class="models__call">заказать звонок</button>
+						<button class="models__order" data-fancybox data-src="#modal">оставить заявку</button>
+						<button class="models__call" data-fancybox data-src="#modal">заказать звонок</button>
 					</div>
 					<span id="zafira"></span>
 				</div>
@@ -171,8 +171,8 @@
 						</div>
 					</div>
 					<div class="models__buttons">
-						<button class="models__order">оставить заявку</button>
-						<button class="models__call">заказать звонок</button>
+						<button class="models__order" data-fancybox data-src="#modal">оставить заявку</button>
+						<button class="models__call" data-fancybox data-src="#modal">заказать звонок</button>
 					</div>
 					<span id="astra"></span>
 				</div>
@@ -206,8 +206,8 @@
 						</div>
 					</div>
 					<div class="models__buttons">
-						<button class="models__order">оставить заявку</button>
-						<button class="models__call">заказать звонок</button>
+						<button class="models__order" data-fancybox data-src="#modal">оставить заявку</button>
+						<button class="models__call" data-fancybox data-src="#modal">заказать звонок</button>
 					</div>
 				</div>
 			</div>
@@ -227,22 +227,34 @@
 			<h2>Яркие моменты.</h2>
 			<div class="gallery__items">
 				<div class="gallery__item">
-					<img src="img/gallery1.jpg" alt="not load">
+					<a href="img/gallery1.jpg" data-fancybox="gallery">
+						<img src="img/gallery1.jpg" alt="not load">
+					</a>
 				</div>
 				<div class="gallery__item">
-					<img src="img/gallery2.jpg" alt="not load">
+					<a href="img/gallery2.jpg" data-fancybox="gallery">
+						<img src="img/gallery2.jpg" alt="not load">
+					</a>
 				</div>
 				<div class="gallery__item">
-					<img src="img/gallery3.jpg" alt="not load">
+					<a href="img/gallery3.jpg" data-fancybox="gallery">
+						<img src="img/gallery3.jpg" alt="not load">
+					</a>
 				</div>
 				<div class="gallery__item">
-					<img src="img/gallery4.jpg" alt="not load">
+					<a href="img/gallery4.jpg" data-fancybox="gallery">
+						<img src="img/gallery4.jpg" alt="not load">
+					</a>
 				</div>
 				<div class="gallery__item">
-					<img src="img/gallery5.jpg" alt="not load">
+					<a href="img/gallery5.jpg" data-fancybox="gallery">
+						<img src="img/gallery5.jpg" alt="not load">
+					</a>
 				</div>
 				<div class="gallery__item">
-					<img src="img/gallery6.jpg" alt="not load">
+					<a href="img/gallery6.jpg" data-fancybox="gallery">
+						<img src="img/gallery6.jpg" alt="not load">
+					</a>
 				</div>																				
 			</div>
 		</div>
@@ -259,7 +271,7 @@
 					в автопрайм Балашиха!</p>
 				</div>
 				<div class="motivation__right">
-					<form action="" class="motivation__form">
+					<form class="motivation__form">
 						<input type="text" placeholder="ваше имя">
 						<input type="tel" placeholder="ваш телефон">
 						<input type="submit" value="получить индивидуальное предложение">
@@ -289,7 +301,17 @@
 	</footer>
 
 	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/fancybox.umd.js"></script>
 	<script src="js/app.js"></script>
+
+	<div class="modal" id="modal">
+		<div class="modal__title">оставить заявку</div>
+		<form class="modal__form">
+			<input type="text" placeholder="ваше имя">
+			<input type="tel" placeholder="ваш телефон">
+			<input type="submit" value="отправить">
+		</form>
+	</div>
 	
 	
 </body>

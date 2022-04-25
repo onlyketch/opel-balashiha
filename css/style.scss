@@ -1,5 +1,6 @@
 @import "reset";
 @import "swiper-bundle.min";
+@import "fancybox";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
 
 html {
@@ -21,6 +22,76 @@ h2 {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
+}
+
+.modal {
+	display: none;
+	font-family: 'Open Sans', Arial, sans-serif;
+	padding: 35px 8%;
+	box-sizing: border-box;
+	&__title {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 35px;
+		text-align: center;
+		color: #000000;
+	}
+	&__form {
+		margin-top: 35px;
+		display: flex;
+		flex-direction: column;
+		max-width: 320px;
+
+		input[type=text], input[type=tel] {
+			font-family: 'Open Sans', Arial, sans-serif;
+			font-weight: 700;
+			outline: none !important;
+			border: none;
+			border-bottom: 2px solid #1c1c1c;
+			font-size: 16px;
+			padding: 9px 0;
+			text-transform: uppercase;
+			margin-bottom: 27px;
+
+			&::placeholder {
+				font-family: 'Open Sans', Arial, sans-serif;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 28px;
+				color: #A5A5A5;
+				text-transform: uppercase;
+			}
+		}
+
+		input[type=submit] {
+			font-family: 'Open Sans', Arial, sans-serif;
+			align-self: center;
+			margin-top: 28px;
+			border: none;
+			outline: none;
+			padding: 0 39px;
+			width: 235px;
+			height: 53px;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: #FFFFFF;
+			font-size: 16px;
+			background-color: #2A9FF3;
+			cursor: pointer;
+			transition: .4s ease-out;
+			&:hover {
+			  background-color: #258DD9;
+			}			
+		}		
+	}
+
+	.is-close {
+		top: 13px !important;
+		right: 13px !important;
+		color: #000000 !important;
+		width: 15px;
+		height: 15px;
+	}
 }
 
 .text-black {
@@ -375,4 +446,9 @@ h2 {
   	opacity: 1;
   }
 
+}
+
+.ymaps-2-1-79-copyright, .ymaps-2-1-79-traffic, 
+.ymaps-2-1-79-gototech, .ymaps-2-1-79-listbox {
+	display: none !important;
 }

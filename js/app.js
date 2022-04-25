@@ -31,4 +31,16 @@ window.addEventListener('DOMContentLoaded', function() {
  		},
 	});
 
+	//ligbox
+
+	lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': false,
+      'showImageNumberLabel': false
+    });
+
+    // fancybox
+
+    Fancybox.defaults.closeButton = outside;
+
 });
