@@ -19,6 +19,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 	const swiper = new Swiper('.swiper', {
   		direction: 'horizontal',
+  		autoHeight: true,
   		loop: true,
   		pagination: {
   			el: '.swiper-pagination',
